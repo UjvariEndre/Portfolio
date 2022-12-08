@@ -1,0 +1,111 @@
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 800;
+}
+
+footer {
+  padding: 10%;
+  text-align: center;
+}
+
+footer a {
+  color: #7858FA;
+  font-size: 1.5rem;
+}
+
+footer a:hover {
+  color: black;
+}
+
+h1 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+h3 {
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+header {
+  background-color: #FA9D46;
+  background-image: url("/images/shattered-dark3.png");
+  padding: 5% 10%;
+}
+
+header a {
+  color: white;
+}
+
+header a:hover {
+  color: black;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+label {
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family: "League Spartan", sans-serif;
+  /* font-size: 0.5rem; */
+  font-weight: 300;
+}
+
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+.first {
+  padding: 10%;
+}
+
+.first h1 {
+  color: #FA9D46
+}
+
+.second {
+  background-color: #FA4F48;
+  background-image: url("/images/shattered-dark3.png");
+  color: white;
+  padding: 10%;
+}
+
+.third {
+  padding: 10%;
+}
+
+.third h1 {
+  color: #FA4F48;
+}
+
+.fourth {
+  background-color: #7858FA;
+  background-image: url("/images/shattered-dark3.png");
+  color: white;
+  padding: 10%;
+}
+
+.logo {
+  font-family: "Fredericka the great", cursive;
+  font-size: 3rem;
+}
