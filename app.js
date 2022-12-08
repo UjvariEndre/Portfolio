@@ -3,7 +3,7 @@ const ejs = require("ejs");
 
 const app = express();
 app.use(express.static("public"));
-app.set('view engine', 'ejs');
+app.set("view engine", "ejs");
 
 // Home
 app.get("/", function(req, res) {
