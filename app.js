@@ -1,9 +1,13 @@
-const express = require('express');
+const express = require("express");
+const ejs = require("ejs");
 
 const app = express();
+app.use(express.static("public"));
+app.set('view engine', 'ejs');
 
+// Home
 app.get("/", function(req, res) {
-  res.send("Hello");
+  res.render("home");
 });
 
 const port = parseInt(process.env.PORT) || 8080;
