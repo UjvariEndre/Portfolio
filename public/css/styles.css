@@ -1,111 +1,108 @@
-a {
-  text-decoration: none;
-}
-
-button {
-  font-family: "League Spartan", sans-serif;
-  font-weight: 800;
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 footer {
-  padding: 10%;
   text-align: center;
 }
 
-footer a {
-  color: #7858FA;
-  font-size: 1.5rem;
-}
-
-footer a:hover {
-  color: black;
-}
-
 h1 {
-  font-family: "League Spartan", sans-serif;
-  font-size: 3.5rem;
-  font-weight: 800;
+  font-size: 4rem;
+  font-weight: 700;
 }
 
 h3 {
-  color: white;
-  font-family: "League Spartan", sans-serif;
-  font-size: 2rem;
-  font-weight: 200;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 h4 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
-header {
-  background-color: #FA9D46;
-  background-image: url("/images/shattered-dark3.png");
+h5 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.content {
+  font-family: "Poppins";
+}
+
+.dark {
+  background-color: #161a34;
+  color: #fefdff;
+}
+
+.dark a {
+  color: #fefdff;
+  text-decoration: none;
+}
+
+.dark a:hover {
+  color: #00e5a6;
+}
+
+.header {
+  margin: 0;
   padding: 5% 10%;
 }
 
-header a {
-  color: white;
+.highlight {
+  color: #425df8;
 }
 
-header a:hover {
-  color: black;
+.main {
+  padding: 5% 10%;
 }
 
-input {
-  font-family: "Poppins", sans-serif;
+.main-card {
+  background-color: #dedee0;
+  padding: 5% 10%;
 }
 
-label {
-  font-family: "Poppins", sans-serif;
-}
-
-li {
-  font-family: "Poppins", sans-serif;
-}
-
-p {
-  font-family: "League Spartan", sans-serif;
-  /* font-size: 0.5rem; */
-  font-weight: 300;
-}
-
-textarea {
-  font-family: "Poppins", sans-serif;
-}
-
-.first {
+.white-card {
+  margin: 3%;
   padding: 10%;
+  background-color: #fefdff;
+  border-radius: 15px;
 }
 
-.first h1 {
-  color: #FA9D46
-}
-
-.second {
-  background-color: #FA4F48;
-  background-image: url("/images/shattered-dark3.png");
-  color: white;
+.blue-card {
+  margin: 3%;
   padding: 10%;
+  background-color: #425df8;
+  border-radius: 15px;
+  color: #fefdff;
 }
 
-.third {
-  padding: 10%;
+.white-card h1 {
+  color: #161a34;
 }
 
-.third h1 {
-  color: #FA4F48;
+.ralign {
+  text-align: right;
 }
 
-.fourth {
-  background-color: #7858FA;
-  background-image: url("/images/shattered-dark3.png");
-  color: white;
-  padding: 10%;
+.separate-lines h4 {
+  margin-bottom: 30px;
 }
 
-.logo {
-  font-family: "Fredericka the great", cursive;
-  font-size: 3rem;
+.form-row {
+  margin: 5% 3%;
+}
+
+.footer-link {
+  margin: 3%
+}
+
+.footer-link a {
+  padding: 1%;
 }

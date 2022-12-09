@@ -1,58 +1,71 @@
 <%- include("partials/header") %>
 
-<main class="home">
+<main>
 
-  <section class="first">
-    <h1>Full Stack Developer.</h1>
-    <h4>Hi, I'm Endre, I like to make solid and responsive products with great user experiences.</h4>
+  <section class="dark main">
+    <h1>Full Stack <span class="highlight">Developer</span>.</h1>
+    <h6>Hi, I'm Endre, I like to make solid and responsive products with great user experiences.</h6>
   </section>
 
-  <section class="second">
-    <div class="row">
-      <div class="col">
-        <h1>What I do</h1>
+  <section class="main-card">
+    <div class="row" >
+      <div class="col-lg-6 col-md-12" style="display: flex;">
+        <div class="white-card" style="flex: 1;">
+          <h1>What I do</h1>
+        </div>
       </div>
-      <div class="col">
-        <h4>UI/UX Design</h4>
-        <h4>Web Development</h4>
-        <h4>Animation</h4>
-        <h4>Web Deployment</h4>
+      <div class="col-lg-6 col-md-12">
+        <div class="blue-card separate-lines">
+          <h4>UI/UX Design</h4>
+          <h4>Web Development</h4>
+          <h4>Animation</h4>
+          <h4>Web Deployment</h4>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="third">
+  <section class="dark main">
     <div class="row">
       <div class="col">
-        <h1>Demo projects</h1>
+        <h1>Demo <span class="highlight">projects</span></h1>
         <h4>Future projects will appear here.</h4>
       </div>
     </div>
   </section>
 
-  <section class="fourth">
+  <section class="main-card">
     <div class="row">
-      <div class="col">
-        <h1>Send me a message!</h1>
-        <h4>Have questions? Have a proposal? Want a small modification? Please contact me.</h4>
+      <div class="col-lg-6 col-md-12" style="display: flex;">
+        <div class="blue-card separate-lines" style="flex: 1;">
+          <h1>Send me a <span style="color:#161a34;">message</span>!</h1>
+          <h4 style="margin-top:10%;">Have questions?</h4>
+          <h4>Have a proposal?</h4>
+          <h4>Want a small modification?</h4>
+          <h4>Please contact me.</h4>
+        </div>
       </div>
-      <div class="col">
-        <form action="https://formspree.io" method="post" target="_blank">
-          <input type="hidden" name="_subject" value="Message from endreujvari.com!">
-          <div data-id="full-name">
-            <label for="full-name">Your Name</label>
-            <input id="full-name" placeholder="Enter your name" type="text" name="name" required="required">
-          </div>
-          <div data-id="email">
-            <label for="email">Email Address</label>
-            <input id="email" placeholder="Enter your email address" type="email" name="_replyto" required="required">
-          </div>
-          <div data-id="message">
-            <label for="message">Your Message</label>
-            <textarea placeholder="Hi Endre, we need a website for our company. When can we talk about the details?" name="message" rows="7" cols="30"></textarea>
-          </div>
-          <button type="submit" name="submit">Send</button>
-        </form>
+      <div class="col-lg-6 col-md-12" style="display: flex;">
+        <div class="white-card" style="flex: 1;">
+          <form action="https://formspree.io" method="post" target="_blank">
+            <input type="hidden" name="_subject" value="Message from endreujvari.com!">
+            <div data-id="full-name" class="form-row">
+              <label for="full-name" class="form-label">Your Name</label>
+              <input id="full-name" class="form-control" placeholder="Enter your name" type="text" name="name" required="required">
+            </div>
+            <div data-id="email" class="form-row">
+              <label for="email" class="form-label">Email Address</label>
+              <input id="email" class="form-control" placeholder="Enter your email address" type="email" name="_replyto" required="required">
+            </div>
+            <div data-id="message" class="form-row">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea placeholder="Hi Endre, we need a website for our company. When can we talk about the details?" class="form-control" name="message" rows="7" cols="30"></textarea>
+            </div>
+            <div class="form-row">
+              <button class="btn btn-lg btn-dark" type="submit" name="submit">Send</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </section>
