@@ -87,8 +87,8 @@ h6 {
   color: #161a34;
 }
 
-.ralign {
-  text-align: right;
+.separate {
+  margin-right: 4%;
 }
 
 .separate-lines h4 {
@@ -105,4 +105,26 @@ h6 {
 
 .footer-link a {
   padding: 1%;
+}
+
+@media (max-width: 1240px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
 }
