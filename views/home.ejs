@@ -35,39 +35,7 @@
   </section>
 
   <section class="main-card">
-    <div class="row">
-      <div class="col-lg-6 col-md-12" style="display: flex;">
-        <div class="blue-card separate-lines" style="flex: 1;">
-          <h1>Send me a <span style="color:#161a34;">message</span>!</h1>
-          <h4 style="margin-top:10%;">Have questions?</h4>
-          <h4>Have a proposal?</h4>
-          <h4>Want a small modification?</h4>
-          <h4>Please contact me.</h4>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-12" style="display: flex;">
-        <div class="white-card" style="flex: 1;">
-          <form action="/" method="post" id="message_form">
-            <!-- <input type="hidden" name="_subject" value="Message from endreujvari.com!"> -->
-            <div data-id="name" class="form-row">
-              <label for="name" class="form-label">Your Name</label>
-              <input id="name" class="form-control" placeholder="Enter your name" type="text" name="name" required="required">
-            </div>
-            <div data-id="email" class="form-row">
-              <label for="email" class="form-label">Email Address</label>
-              <input id="email" class="form-control" placeholder="Enter your email address" type="email" name="email" required="required">
-            </div>
-            <div data-id="message" class="form-row">
-              <label for="message" class="form-label">Your Message</label>
-              <textarea placeholder="Hi Endre, we need a website for our company. When can we talk about the details?" class="form-control" name="message" rows="7" cols="30"></textarea>
-            </div>
-            <div class="form-row">
-              <button class="btn btn-lg btn-dark" type="submit">Send</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
+    <%- include("partials/send_message") %>
   </section>
 
 </main>

@@ -8,7 +8,13 @@ footer {
 }
 
 h1 {
+  margin-bottom: 5%;
   font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3.5rem;
   font-weight: 700;
 }
 
@@ -83,6 +89,14 @@ h6 {
   color: #fefdff;
 }
 
+.dark-card {
+  margin: 3%;
+  padding: 10%;
+  background-color: #161a34;
+  border-radius: 15px;
+  color: #fefdff;
+}
+
 .white-card h1 {
   color: #161a34;
 }
@@ -107,9 +121,19 @@ h6 {
   padding: 1%;
 }
 
+.contact-links {
+  margin: 10%;
+  font-size: 2rem;
+  text-align: center;
+}
+
 @media (max-width: 1240px) {
   h1 {
     font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
   }
 
   h3 {
@@ -126,5 +150,26 @@ h6 {
 
   h6 {
     font-size: 1rem;
+  }
+
+  .contact-links {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact-links {
+    font-size: 1rem;
+  }
+
+  #experience-card {
+    background-color: #fefdff;
+    color: black;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-links {
+    margin: 10% 2%;
   }
 }

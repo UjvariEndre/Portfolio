@@ -44,6 +44,24 @@ app.post("/", function(req, res) {
   res.redirect("/");
 });
 
+// About
+
+app.get("/about", function(req, res) {
+  res.render("about");
+});
+
+// Portfolio
+
+app.get("/portfolio", function(req, res) {
+  res.render("portfolio");
+});
+
+// Contact
+
+app.get("/contact", function(req, res) {
+  res.render("contact");
+});
+
 const port = parseInt(process.env.PORT) || 8080;
 app.listen(port, () => {
   console.log(`portfolio: listening on port ${port}`);
