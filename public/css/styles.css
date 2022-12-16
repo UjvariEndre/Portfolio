@@ -47,12 +47,32 @@ ul {
   font-size: 2rem;
 }
 
-p {
-  font-size: 1.5rem;
+.about-button {
+  margin: 5% 12px;
+  min-width: 236px;
+  width: 30%;
 }
 
-.content {
-  font-family: "Poppins";
+.about-list {
+  margin-top: 10%;
+}
+
+.about-list li {
+  padding-bottom: 1%;
+}
+
+.about-paragraph {
+  font-size: 1.5rem;
+  padding-right: 10%
+}
+
+.about-profile-picture {
+  width: 100%;
+}
+
+.about-resume {
+  margin: 10% 0;
+  text-align: center;
 }
 
 .dark {
@@ -169,7 +189,7 @@ p {
     font-size: 1.5rem;
   }
 
-  p {
+  .about-paragraph {
     font-size: 1rem;
   }
 
@@ -179,17 +199,22 @@ p {
 }
 
 @media (max-width: 991px) {
-  .contact-links {
-    font-size: 1rem;
+  .about-profile-picture {
+    width: 70%;
+    margin: 10%;
   }
 
-  #experience-card {
-    background-color: #fefdff;
-    color: black;
+  .contact-links {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 600px) {
+  .about-profile-picture {
+    width: 90%;
+    margin: 10% 0;
+  }
+
   .contact-links {
     margin: 10% 2%;
   }

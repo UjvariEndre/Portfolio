@@ -3,19 +3,18 @@
 <section class="dark main">
   <h1>About</h1>
   <div class="row">
-    <div class="col-lg-6 col-md-12">
+    <div class="col-lg-8 col-md-12 about-paragraph">
       <p>Hello, my name is Endre Újvári and I enjoy creating things on the internet. My interest in web development started in my early career, when I had the opportunity to create an angular web application in my workplace. </p>
       <p>Later I had the opportunity to start my own company and work as a freelance developer. My main focus is building responsive web sites as well as creating stunning web design and other web products for a variety of clients.</p>
       <p>I’m a well-organised person, problem solver, I have high attention to details. I love to travel, do outdoor activities and also playing guitar. </p>
       <p>A few technologies I’ve been working with recently: JavaScript (ES6+), React, Node.js, TypeScript, HTML, CSS, APIs, MongoDB.</p>
-
     </div>
-    <div class="col-lg-6 col-md-12">
-      <div class="" style="margin-left: 10%;">
-        <img width="100%"  src="images/pp5.jpg" alt="My profile picture">
-        <p>Let’s work together!</p>
+    <div class="col-lg-4 col-md-12">
+      <div class="" >
+        <img class="about-profile-picture" src="images/pp5.jpg" alt="My profile picture">
       </div>
     </div>
+    <button class="btn btn-lg btn-light about-button" type="button" id="contact_button">Let’s work together!</button>
   </div>
 
 </section>
@@ -25,30 +24,35 @@
     <div class="col-lg-6 col-md-12" style="display: flex;">
       <div class="white-card" style="flex: 1;">
         <h2>Core skills</h2>
-
+        <ul class="about-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>APIs</li>
+          <li>Node.js</li>
+          <li>React</li>
+          <li>Angular</li>
+          <li>MongoDB</li>
+          <li>MySQL</li>
+        </ul>
       </div>
     </div>
     <div class="col-lg-6 col-md-12" style="display: flex;">
       <div class="blue-card" style="flex: 1;">
-        <h2>Other skills</h2>
-
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-6 col-md-12" style="display: flex;">
-      <div id="experience-card" class="blue-card" style="flex: 1;">
-        <h2>Experience</h2>
-
-      </div>
-    </div>
-    <div class="col-lg-6 col-md-12" style="display: flex;">
-      <div class="dark-card" style="flex: 1;">
-        <h2>Projects</h2>
-        <p>Link to the Portfolio page.</p>
+        <h2>Resume</h2>
+        <div class="about-resume">
+          <img width="50%" src="images/CV_2022.png" alt="My Resume">
+        </div>
+        <button class="btn btn-lg btn-dark about-button" type="button">Download PDF</button>
       </div>
     </div>
   </div>
 </section>
+
+<script type="text/javascript">
+    document.getElementById("contact_button").onclick = function () {
+        location.href = "/contact";
+    };
+</script>
 
 <%- include("partials/footer") %>
