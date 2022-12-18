@@ -24,9 +24,47 @@
           <textarea placeholder="Hi Endre, we need a website for our company. When can we talk about the details?" class="form-control" name="message" rows="7" cols="30"></textarea>
         </div>
         <div class="form-row">
-          <button class="btn btn-lg btn-dark" type="submit">Send</button>
+          <button class="dark-button dark-button-anim" type="submit">Send</button>
         </div>
       </form>
     </div>
   </div>
 </div>
+
+<!-- Animation -->
+<script type="text/javascript">
+  const darkButton = document.querySelector(".dark-button-anim");
+
+  const darkAnimMouseOver = () => {
+    anime({
+      targets: darkButton,
+      width: "60%",
+      scale: {
+        value: 1.1
+      },
+      duration: 800,
+      backgroundColor: "#00e5a6",
+      color: "#161a34",
+      fontWeight: 900,
+      boxShadow: "10px 10px 5px grey"
+    })
+  }
+
+  const darkAnimMouseOut = () => {
+    anime({
+      targets: darkButton,
+      width: "50%",
+      scale: {
+        value: 1
+      },
+      duration: 800,
+      backgroundColor: "#161a34",
+      color: "#fefdff",
+      fontWeight: 700,
+      boxShadow: "0px 0px black"
+    })
+  }
+
+  darkButton.addEventListener("mouseover", darkAnimMouseOver);
+  darkButton.addEventListener("mouseout", darkAnimMouseOut);
+</script>

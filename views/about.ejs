@@ -14,7 +14,7 @@
         <img class="about-profile-picture" src="images/pp5.jpg" alt="My profile picture">
       </div>
     </div>
-    <button class="btn btn-lg btn-light about-button" type="button" id="contact_button">Let’s work together!</button>
+    <button class="about-button light-button" type="button" id="contact_button">Let’s work together!</button>
   </div>
 
 </section>
@@ -41,9 +41,12 @@
       <div class="blue-card" style="flex: 1;">
         <h2>Resume</h2>
         <div class="about-resume">
-          <img width="50%" src="images/CV_2022.png" alt="My Resume">
+          <a href="files/CV_2022.pdf" target="_blank">
+            <img width="50%" src="images/CV_2022.png" alt="My Resume">
+          </a>
         </div>
-        <button class="btn btn-lg btn-dark about-button" type="button">Download PDF</button>
+        <button id="download_button" class="light-button" type="button">Download PDF</button>
+        <a href="files/CV_2022.pdf" download id="download" hidden></a>
       </div>
     </div>
   </div>
@@ -53,6 +56,75 @@
     document.getElementById("contact_button").onclick = function () {
         location.href = "/contact";
     };
+    document.getElementById("download_button").onclick = function () {
+      document.getElementById('download').click();
+    };
+</script>
+<!-- Animation -->
+<script type="text/javascript">
+  // Contact Button
+  const contactButton = document.getElementById("contact_button");
+  contactButton.addEventListener("mouseover", function() {
+    anime({
+      targets: this,
+      width: "35%",
+      scale: {
+        value: 1.1
+      },
+      duration: 800,
+      backgroundColor: "#00e5a6",
+      color: "#161a34",
+      fontWeight: 900,
+      boxShadow: "10px 10px 5px black"
+    })
+  });
+
+  contactButton.addEventListener("mouseout", function() {
+    anime({
+      targets: this,
+      width: "30%",
+      scale: {
+        value: 1
+      },
+      duration: 800,
+      backgroundColor: "#fefdff",
+      color: "#161a34",
+      fontWeight: 700,
+      boxShadow: "0px 0px black"
+    })
+  });
+
+  // Download button
+  const downloadButton = document.getElementById("download_button");
+  downloadButton.addEventListener("mouseover", function() {
+    anime({
+      targets: this,
+      width: "50%",
+      scale: {
+        value: 1.1
+      },
+      duration: 800,
+      backgroundColor: "#00e5a6",
+      color: "#161a34",
+      fontWeight: 900,
+      boxShadow: "10px 10px 5px black"
+    })
+  });
+
+  downloadButton.addEventListener("mouseout", function() {
+    anime({
+      targets: this,
+      width: "40%",
+      scale: {
+        value: 1
+      },
+      duration: 800,
+      backgroundColor: "#fefdff",
+      color: "#161a34",
+      fontWeight: 700,
+      boxShadow: "0px 0px black"
+    })
+  });
 </script>
 
 <%- include("partials/footer") %>

@@ -75,6 +75,20 @@ ul {
   text-align: center;
 }
 
+.blue-card {
+  margin: 3%;
+  padding: 10%;
+  background-color: #425df8;
+  border-radius: 15px;
+  color: #fefdff;
+}
+
+.contact-links {
+  margin: 10%;
+  font-size: 2rem;
+  text-align: center;
+}
+
 .dark {
   background-color: #161a34;
   color: #fefdff;
@@ -89,6 +103,38 @@ ul {
   color: #00e5a6;
 }
 
+.dark-card {
+  margin: 3%;
+  padding: 10%;
+  background-color: #161a34;
+  border-radius: 15px;
+  color: #fefdff;
+}
+
+.dark-button {
+    background-color: #161a34;
+    border: none;
+    border-radius: 5px;
+    color: #fefdff;
+    display: block;
+    width: 50%;
+    height: 40px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footer-link {
+  margin: 3%
+}
+
+.footer-link a {
+  padding: 1%;
+}
+
+.form-row {
+  margin: 5% 3%;
+}
+
 .header {
   margin: 0;
   padding: 5% 10%;
@@ -96,6 +142,19 @@ ul {
 
 .highlight {
   color: #425df8;
+}
+
+.light-button {
+    background-color: #fefdff;
+    border: none;
+    border-radius: 5px;
+    color: #161a34;
+    display: block;
+    min-width: 250px;
+    width: 30%;
+    height: 40px;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .main {
@@ -114,26 +173,6 @@ ul {
   border-radius: 15px;
 }
 
-.blue-card {
-  margin: 3%;
-  padding: 10%;
-  background-color: #425df8;
-  border-radius: 15px;
-  color: #fefdff;
-}
-
-.dark-card {
-  margin: 3%;
-  padding: 10%;
-  background-color: #161a34;
-  border-radius: 15px;
-  color: #fefdff;
-}
-
-.white-card h1 {
-  color: #161a34;
-}
-
 .separate {
   margin-right: 4%;
 }
@@ -142,22 +181,8 @@ ul {
   margin-bottom: 30px;
 }
 
-.form-row {
-  margin: 5% 3%;
-}
-
-.footer-link {
-  margin: 3%
-}
-
-.footer-link a {
-  padding: 1%;
-}
-
-.contact-links {
-  margin: 10%;
-  font-size: 2rem;
-  text-align: center;
+.white-card h1 {
+  color: #161a34;
 }
 
 @media (max-width: 1240px) {
