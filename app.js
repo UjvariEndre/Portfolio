@@ -41,7 +41,7 @@ app.post("/", function(req, res) {
   const email = req.body.email;
   const message = req.body.message;
   mailWrapper(name, email, message).catch(console.error);
-  res.redirect("/");
+  res.redirect("message_sent");
 });
 
 // About
@@ -60,6 +60,12 @@ app.get("/portfolio", function(req, res) {
 
 app.get("/contact", function(req, res) {
   res.render("contact");
+});
+
+// Message sent
+
+app.get("/message_sent", function(req, res) {
+  res.render("message_sent");
 });
 
 const port = parseInt(process.env.PORT) || 8080;

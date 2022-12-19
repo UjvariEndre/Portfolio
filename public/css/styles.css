@@ -140,6 +140,20 @@ ul {
   padding: 5% 10%;
 }
 
+.home-button {
+  margin-top: 10%;
+  background-color: #425df8;
+  border: none;
+  border-radius: 5px;
+  color: #fefdff;
+  display: block;
+  min-width: 250px;
+  width: 30%;
+  height: 40px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 .highlight {
   color: #425df8;
 }
@@ -183,6 +197,15 @@ ul {
 
 .white-card h1 {
   color: #161a34;
+}
+
+#contact_button {
+  min-width: 300px;
+}
+
+#modal-close-button:hover {
+  color: #F50F4A;
+  cursor: pointer;
 }
 
 @media (max-width: 1240px) {

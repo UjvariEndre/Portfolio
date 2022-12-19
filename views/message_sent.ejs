@@ -1,0 +1,64 @@
+<%- include("partials/header") %>
+
+<section class="dark main">
+  <h1>Message <span class="highlight">sent</span>!</h1>
+</section>
+
+<section class="main-card">
+  <div class="row white-card">
+    <div class="col">
+      <h5>Thank you for your message!</h5>
+      <h5>I will reply as soon as possible.</h5>
+      <button class="home-button blue-button-anim" type="button" id="home_button">Return to home</button>
+    </div>
+    <div class="col">
+      <!-- Ide majd egy kép jön -->
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  document.getElementById("home_button").onclick = function () {
+      location.href = "/";
+  };
+</script>
+
+<!-- Animejs -->
+<script type="text/javascript">
+  const blueButton = document.querySelector(".blue-button-anim");
+
+  const blueAnimMouseOver = () => {
+    anime({
+      targets: blueButton,
+      width: "40%",
+      scale: {
+        value: 1.1
+      },
+      duration: 800,
+      backgroundColor: "#00e5a6",
+      color: "#161a34",
+      fontWeight: 900,
+      boxShadow: "10px 10px 5px grey"
+    })
+  }
+
+  const blueAnimMouseOut = () => {
+    anime({
+      targets: blueButton,
+      width: "30%",
+      scale: {
+        value: 1
+      },
+      duration: 800,
+      backgroundColor: "#425df8",
+      color: "#fefdff",
+      fontWeight: 700,
+      boxShadow: "0px 0px black"
+    })
+  }
+
+  blueButton.addEventListener("mouseover", blueAnimMouseOver);
+  blueButton.addEventListener("mouseout", blueAnimMouseOut);
+</script>
+
+<%- include("partials/footer") %>
