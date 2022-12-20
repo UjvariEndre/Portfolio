@@ -171,6 +171,10 @@ ul {
     font-weight: 700;
 }
 
+.logo {
+  font-family: "Major Mono Display";
+}
+
 .main {
   padding: 5% 10%;
 }
