@@ -172,7 +172,7 @@ ul {
 }
 
 .logo {
-  font-family: "Major Mono Display";
+  font-family: "Suez One", serif;
 }
 
 .main {
@@ -262,6 +262,34 @@ ul {
 }
 
 @media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  .about-button {
+    min-width: 250px;
+  }
+
   .about-profile-picture {
     width: 90%;
     margin: 10% 0;
@@ -269,5 +297,14 @@ ul {
 
   .contact-links {
     margin: 10% 2%;
+  }
+
+  .light-button {
+    font-size: 1rem;
+    min-width: 200px;
+  }
+
+  #contact_button {
+    min-width: 250px;
   }
 }
