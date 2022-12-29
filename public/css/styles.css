@@ -299,6 +299,11 @@ ul {
     margin: 10% 2%;
   }
 
+  .home-button {
+    font-size: 1rem;
+    min-width: 200px;
+  }
+
   .light-button {
     font-size: 1rem;
     min-width: 200px;
@@ -306,5 +311,10 @@ ul {
 
   #contact_button {
     min-width: 250px;
+  }
+
+  #home_button {
+    font-size: 1rem;
+    min-width: 200px;
   }
 }
