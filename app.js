@@ -3,6 +3,7 @@ const ejs = require("ejs");
 const bodyParser = require("body-parser");
 const dotenv = require("dotenv").config();
 const nodemailer = require("nodemailer");
+const fetch = require("isomorphic-fetch");
 
 const app = express();
 app.use(express.static("public"));
@@ -40,7 +41,26 @@ app.post("/", function(req, res) {
   const name = req.body.name;
   const email = req.body.email;
   const message = req.body.message;
-  mailWrapper(name, email, message).catch(console.error);
+  // Checking if the sender is a bot with google reCAPTCHA v3
+  const url = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.SECRET_KEY}&response=${req.body.output}`;
+  fetch(url, {
+    method: "post"
+  }).then((response) => response.json()).then((google_response) => {
+    if(google_response.success) {
+      if (google_response.score >= 0.5) {
+        mailWrapper(name, email, message).catch(console.error);
+        console.log("email has been sent");
+      } else {
+        console.log("Warning, you have been banned for suspicious behavior, please try again later.");
+      }
+    } else {
+      console.log("Error with Google reCAPTCHA response");
+    }
+  }).catch((error) => {
+    return res.json({
+      error
+    });
+  });
   res.redirect("message_sent");
 });
 

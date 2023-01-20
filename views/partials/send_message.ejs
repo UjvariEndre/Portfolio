@@ -10,7 +10,9 @@
   </div>
   <div class="col-lg-6 col-md-12" style="display: flex;">
     <div class="white-card" style="flex: 1;">
-      <form action="/" method="post" id="message_form">
+      <!-- action="/" method="post" -->
+      <form id="message_form" action="/" method="post">
+        <input type="hidden" id="output" name="output" value="" />
         <div data-id="name" class="form-row">
           <label for="name" class="form-label">Your Name</label>
           <input id="name" class="form-control" placeholder="Enter your name" type="text" name="name" required="required">
@@ -30,6 +32,21 @@
     </div>
   </div>
 </div>
+
+<!-- reCAPTCHA -->
+<script>
+  window.addEventListener("submit", e => {
+    e.preventDefault();
+    grecaptcha.ready(function() {
+      grecaptcha.execute('6Lf4bG8jAAAAAE_BXxHe5zXRmMBHpKs2FEOLZUtu', {action: 'submit'}).then(function(token) {
+          // Add your logic to submit to your backend server here.
+          var output = document.getElementById("output");
+          output.value = token;
+          document.getElementById("message_form").submit();
+      });
+    });
+  });
+</script>
 
 <!-- Animation -->
 <script type="text/javascript">
